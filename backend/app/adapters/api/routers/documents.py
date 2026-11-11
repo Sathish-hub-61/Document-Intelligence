@@ -181,6 +181,35 @@ def get_version_job(
     }
 
 
+@router.post("/versions/{version_id}/reindex", status_code=status.HTTP_202_ACCEPTED)
+def reindex_version(
+    version_id: UUID,
+    background_tasks: BackgroundTasks,
+    current_admin: User = Depends(require_role(Role.ADMIN)),
+    db: Session = Depends(get_db),
+):
+    repo = SqlAlchemyDocumentRepo(db)
+    version = repo.get_version(version_id)
+    if not version:
+        raise EntityNotFoundError("Version not found")
+
+    job = IngestionJob(version_id=version_id, status=JobStatus.QUEUED)
+    saved_job = repo.create_job(job)
+
+    background_tasks.add_task(
+        _bg_ingest_worker,
+        version_id,
+        saved_job.job_id,
+        version.file_path,
+    )
+
+    return {
+        "version_id": str(version_id),
+        "job_id": str(saved_job.job_id),
+        "status": "queued",
+    }
+
+
 @router.get("/chunks/{chunk_id}")
 def get_chunk(
     chunk_id: UUID,
