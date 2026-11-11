@@ -8,7 +8,7 @@ This roadmap implements the University Document Intelligence platform following 
 
 - [x] **Phase 0: Project Setup and Hexagonal Scaffolding** - Establish repository layout, Docker Compose PostgreSQL 16, FastAPI backend skeleton, React Vite frontend skeleton, Alembic migrations, and core domain entities & ports.
 - [x] **Phase 1: Authentication, Authorization and Roles** - Implement users table, Argon2 password hashing, JWT authentication, `require_role` FastAPI dependency, seeded users, and document permission enforcement.
-- [ ] **Phase 2: Document Ingestion, Extraction and Chunking** - Implement file validation, PyMuPDF and python-docx text extractors, section heading and page tracking, chunking pipeline, and background ingestion job tracking.
+- [x] **Phase 2: Document Ingestion, Extraction and Chunking** - Implement file validation, PyMuPDF and python-docx text extractors, section heading and page tracking, chunking pipeline, and background ingestion job tracking.
 - [ ] **Phase 3: Knowledge Base, Embeddings and Full-Text Indexing** - Implement Sentence Transformers `BAAI/bge-small-en-v1.5` embeddings, persistent ChromaDB indexing with role flags, and PostgreSQL full-text search (`tsvector` + GIN).
 - [ ] **Phase 4: Hybrid Retrieval and Strict Permission Filtering** - Implement hybrid retrieval pipeline (dense vector + sparse full-text), Reciprocal Rank Fusion (RRF), dual-layer role filtering (pre-filter and post-merge authoritative SQL join), and retrieval traces.
 - [ ] **Phase 5: Grounded RAG Generation, Citations and PII Redaction** - Implement `LLMPort` adapter (Gemini/OpenAI/Fake), strict grounded prompt contract, citation checker, abstain gate, PII query redaction, chat sessions with follow-ups, and automated leak tests.
@@ -59,7 +59,7 @@ Plans:
 **Plans**: 1 plan
 
 Plans:
-- [ ] 02-01: Implement upload validation, file storage adapter, PyMuPDF and DOCX extractors, section-aware chunker, and background ingestion job runner.
+- [x] 02-01: Implement upload validation, file storage adapter, PyMuPDF and DOCX extractors, section-aware chunker, and background ingestion job runner.
 
 ### Phase 3: Knowledge Base, Embeddings and Full-Text Indexing
 **Goal**: Implement dense vector embeddings with Sentence Transformers, ChromaDB indexing with role metadata flags, and PostgreSQL full-text search indexing.

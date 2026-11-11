@@ -115,15 +115,17 @@ def test_require_role_admin_authorization():
     admin_token = admin_login.json()["access_token"]
 
     # Admin registers a new user -> success (200)
+    from uuid import uuid4
+    unique_email = f"faculty_{uuid4().hex[:8]}@university.edu"
     admin_reg = client.post(
         "/api/auth/register",
         headers={"Authorization": f"Bearer {admin_token}"},
         json={
             "name": "New Faculty Member",
-            "email": "newfaculty@university.edu",
+            "email": unique_email,
             "password": "ValidPassword123!",
             "role": "faculty",
         },
     )
     assert admin_reg.status_code == 200
-    assert admin_reg.json()["email"] == "newfaculty@university.edu"
+    assert admin_reg.json()["email"] == unique_email
