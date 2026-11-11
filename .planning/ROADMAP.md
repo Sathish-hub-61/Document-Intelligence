@@ -10,7 +10,7 @@ This roadmap implements the University Document Intelligence platform following 
 - [x] **Phase 1: Authentication, Authorization and Roles** - Implement users table, Argon2 password hashing, JWT authentication, `require_role` FastAPI dependency, seeded users, and document permission enforcement.
 - [x] **Phase 2: Document Ingestion, Extraction and Chunking** - Implement file validation, PyMuPDF and python-docx text extractors, section heading and page tracking, chunking pipeline, and background ingestion job tracking.
 - [x] **Phase 3: Knowledge Base, Embeddings and Full-Text Indexing** - Implement Sentence Transformers `BAAI/bge-small-en-v1.5` embeddings, persistent ChromaDB indexing with role flags, and PostgreSQL full-text search (`tsvector` + GIN).
-- [ ] **Phase 4: Hybrid Retrieval and Strict Permission Filtering** - Implement hybrid retrieval pipeline (dense vector + sparse full-text), Reciprocal Rank Fusion (RRF), dual-layer role filtering (pre-filter and post-merge authoritative SQL join), and retrieval traces.
+- [x] **Phase 4: Hybrid Retrieval and Strict Permission Filtering** - Implement hybrid retrieval pipeline (dense vector + sparse full-text), Reciprocal Rank Fusion (RRF), dual-layer role filtering (pre-filter and post-merge authoritative SQL join), and retrieval traces.
 - [ ] **Phase 5: Grounded RAG Generation, Citations and PII Redaction** - Implement `LLMPort` adapter (Gemini/OpenAI/Fake), strict grounded prompt contract, citation checker, abstain gate, PII query redaction, chat sessions with follow-ups, and automated leak tests.
 - [ ] **Phase 6: Document Versioning, Lifecycle and As-Of Retrieval** - Implement version management (draft, current, superseded, archived), effective dates, atomic publishing, and versioned citation persistence.
 - [ ] **Phase 7: Frontend Web Application** - Build React 18 + Vite + TypeScript interface with Tailwind CSS: Chat workspace, citation popover/source panel, document catalog, and Admin document management console.
@@ -88,7 +88,7 @@ Plans:
 **Plans**: 1 plan
 
 Plans:
-- [ ] 04-01: Implement hybrid retrieval service, RRF merging algorithm, dual-layer permission filter, evidence gate, and retrieval trace persistence.
+- [x] 04-01: Implement hybrid retrieval service, RRF merging algorithm, dual-layer permission filter, evidence gate, and retrieval trace persistence.
 
 ### Phase 5: Grounded RAG Generation, Citations and PII Redaction
 **Goal**: Implement LLM generation behind LLMPort with strict grounded prompt contract, citation checker, abstain gate, PII redaction, and automated leak test.
