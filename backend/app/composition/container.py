@@ -37,3 +37,4 @@ def get_container() -> Container:
     if _container_instance is None:
         _container_instance = Container()
     return _container_instance
+

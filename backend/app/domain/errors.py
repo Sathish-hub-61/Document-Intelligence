@@ -46,3 +46,4 @@ class ValidationError(DomainError):
 class LLMUnavailableError(DomainError):
     def __init__(self, message: str = "The LLM provider failed after retries"):
         super().__init__(message, code="llm_unavailable")
+

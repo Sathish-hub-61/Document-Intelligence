@@ -71,3 +71,4 @@ class PostgresFullTextSearch(KeywordIndexPort):
 
             scored.sort(key=lambda x: x[1], reverse=True)
             return [(cid, rank + 1, sc) for rank, (cid, sc) in enumerate(scored[:top_k])]
+

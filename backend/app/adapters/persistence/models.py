@@ -221,3 +221,4 @@ class EvalResultModel(Base):
     citations_valid = Column(Boolean, nullable=False)
     leak_detected = Column(Boolean, nullable=False, default=False)
     latency_ms = Column(Integer, nullable=False)
+

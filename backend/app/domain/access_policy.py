@@ -54,3 +54,4 @@ def filter_authorized_chunks(
     if user_role == Role.ADMIN:
         return chunks
     return [chunk for chunk in chunks if chunk.version_id in allowed_version_ids]
+

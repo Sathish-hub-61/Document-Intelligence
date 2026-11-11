@@ -31,3 +31,4 @@ completed_at: 2026-11-11
 
 6. **Automated Testing**:
    - `backend/tests/unit/test_phase1_auth.py`: tests for Argon2 hashing, password length constraint, token expiry, login, `auth/me`, and `require_role` access rejection (403 for student accessing admin endpoints). All tests passed.
+

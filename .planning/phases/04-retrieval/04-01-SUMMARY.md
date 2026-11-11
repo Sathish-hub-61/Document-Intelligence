@@ -26,3 +26,4 @@ completed_at: 2026-11-11
 
 3. **Verification Tests**:
    - `backend/tests/unit/test_phase4_retrieval.py`: tests for RRF mathematical scoring, evidence gate thresholding, and role isolation (verifying that student searches never leak faculty confidential moderation chunks into prompt context or retrieval traces). All tests passed.
+

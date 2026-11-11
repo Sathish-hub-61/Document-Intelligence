@@ -35,3 +35,4 @@ completed_at: 2026-11-11
 
 4. **Testing & Verification**:
    - `backend/tests/unit/test_phase0_setup.py`: 6 tests covering entities, access policy, post-merge authoritative chunk filtering, citation rules, FakeLLM, and `/api/health`. All 6 passed.
+

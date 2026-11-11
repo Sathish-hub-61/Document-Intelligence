@@ -56,3 +56,4 @@ def check_evidence_gate(
         return False
     best_score = fused_candidates[0][1]
     return best_score >= min_evidence_score
+

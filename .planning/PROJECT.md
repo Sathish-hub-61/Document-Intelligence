@@ -56,3 +56,4 @@ Correct, strictly grounded answers with verifiable page-level citations from off
 | Dual-layer role filtering | Pre-filter in Chroma for search speed + post-merge authoritative SQL join to guarantee zero leaks | ✓ Good |
 | Strict JSON LLM citation contract | Prevents hallucinations; if an answer cannot be cited to retrieved chunks, system abstains | ✓ Good |
 | Clean / Hexagonal ports | Enables rapid unit testing without network calls or API keys via FakeLLM and In-Memory Vector Store | ✓ Good |
+

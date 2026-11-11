@@ -150,3 +150,4 @@ class AuditLog:
     detail: Optional[Dict[str, Any]] = None
     audit_id: Optional[int] = None
     created_at: datetime = field(default_factory=datetime.utcnow)
+

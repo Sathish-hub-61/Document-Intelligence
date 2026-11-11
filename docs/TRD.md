@@ -35,3 +35,4 @@
 2. Enforce JSON schema output: `{ "answer": str, "citations": [int], "sufficient": bool }`.
 3. Citation validation: all cited numbers must map to supplied chunks. If no valid citation is present, replace with neutral abstain message.
 4. Store retrieval trace and message citations in database.
+

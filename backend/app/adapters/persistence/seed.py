@@ -70,3 +70,4 @@ if __name__ == "__main__":
     print("Seeding database accounts...")
     seed_database()
     print("Seeding complete.")
+

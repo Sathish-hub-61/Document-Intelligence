@@ -36,3 +36,4 @@ completed_at: 2026-11-11
 
 7. **Verification Tests**:
    - `backend/tests/unit/test_phase2_ingestion.py`: tests for magic bytes validation, PDF/DOCX extraction, chunking, and API upload/job flow. All 16 tests in the test suite passed.
+

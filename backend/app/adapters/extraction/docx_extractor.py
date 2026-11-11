@@ -58,3 +58,4 @@ class DocxExtractor:
             blocks=blocks,
             has_scanned_pages=False,
         )
+

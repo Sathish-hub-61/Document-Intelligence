@@ -104,3 +104,4 @@ class PyMuPDFExtractor:
             blocks=blocks,
             has_scanned_pages=has_scanned,
         )
+

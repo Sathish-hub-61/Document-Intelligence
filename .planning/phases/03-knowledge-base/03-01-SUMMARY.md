@@ -28,3 +28,4 @@ completed_at: 2026-11-11
 
 6. **Automated Verification**:
    - `backend/tests/unit/test_phase3_indexing.py`: tests for embedding dimensions, Chroma role flag isolation (student cannot see confidential faculty chunks), keyword search filtering, and reindex API. All 20 tests in the suite passed.
+

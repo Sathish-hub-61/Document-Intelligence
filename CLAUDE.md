@@ -37,3 +37,4 @@ make eval      run the gold question set
 - Do not call an LLM or vector store directly from routes or domain code.
 - Do not trust the frontend for authorization.
 - Do not log raw user questions, tokens, or document text.
+

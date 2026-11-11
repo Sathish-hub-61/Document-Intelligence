@@ -169,3 +169,4 @@ def test_api_reindex_endpoint():
         )
         assert admin_reindex.status_code == 202
         assert admin_reindex.json()["status"] == "queued"
+

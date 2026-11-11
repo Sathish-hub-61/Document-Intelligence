@@ -3,3 +3,4 @@ Done: Bootstrapped GSD roadmap, requirements, project context, CLAUDE.md, docs/P
 Next: Complete Phase 0 scaffolding (domain entities, ports, settings, persistence models, FastAPI health, frontend skeleton).
 Broken: None.
 Decision: Use Clean Architecture ports and adapters to enable zero-dependency unit testing with test fakes.
+

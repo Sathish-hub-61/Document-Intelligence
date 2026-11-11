@@ -11,3 +11,4 @@ Implement the hybrid retrieval engine combining dense vector search (ChromaDB) a
 - Authoritative Re-Check: Chunks verified against PostgreSQL permission join; non-permitted chunks dropped.
 - Evidence Gate: If best fused score < 0.015 or candidates < 1, trigger abstention.
 - Tracing: Record candidate IDs, ranks, scores, and prompt chunk IDs.
+

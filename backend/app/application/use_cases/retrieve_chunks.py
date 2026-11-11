@@ -121,3 +121,4 @@ class HybridRetrievalUseCase:
             return [], trace, False
 
         return final_chunks, trace, True
+

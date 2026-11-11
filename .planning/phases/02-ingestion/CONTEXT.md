@@ -11,3 +11,4 @@ Build the document ingestion pipeline: file signature and size validation, SHA-2
 - Chunking: Section-aware chunking, ~600 tokens, 80 tokens overlap, preserving `page_start`, `page_end`, and `section_heading`.
 - Job tracking: `queued` -> `extracting` -> `chunking` -> `completed` (or `failed`).
 - Endpoints: `POST /api/documents` (admin, 202 Accepted), `GET /api/documents`, `GET /api/documents/{id}`, `GET /api/versions/{id}/jobs`, `GET /api/chunks/{id}`.
+

@@ -189,3 +189,4 @@ def test_api_document_upload_and_role_access(sample_pdf_bytes):
     assert student_docs.status_code == 200
     doc_ids = [d["document_id"] for d in student_docs.json()]
     assert doc_id in doc_ids
+

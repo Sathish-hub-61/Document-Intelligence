@@ -54,3 +54,4 @@ class FakeLLM(LLMPort):
             return question
         last_turn = history[-1].get("question", "")
         return f"{last_turn} Context: {question}"
+

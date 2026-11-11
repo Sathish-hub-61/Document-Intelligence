@@ -162,3 +162,4 @@ def test_hybrid_retrieval_role_isolation(tmp_path):
 
     finally:
         db.close()
+

@@ -28,3 +28,4 @@ def verify_password(plain_password: str, password_hash: str) -> bool:
         return _hasher.verify(password_hash, plain_password)
     except (VerifyMismatchError, InvalidHashError):
         return False
+

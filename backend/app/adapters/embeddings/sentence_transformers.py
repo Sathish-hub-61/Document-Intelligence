@@ -56,3 +56,4 @@ class SentenceTransformerEmbeddingAdapter(EmbeddingPort):
             return [self._deterministic_fallback_embed(t) for t in texts]
         embeddings = model.encode(texts, normalize_embeddings=True, show_progress_bar=False)
         return [emb.tolist() for emb in embeddings]
+

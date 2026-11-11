@@ -68,3 +68,4 @@ def build_citations(
         )
 
     return sorted(citations, key=lambda c: c.n)
+

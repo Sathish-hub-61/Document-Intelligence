@@ -8,3 +8,4 @@ Implement secure user persistence, Argon2 password hashing, short-lived JWT issu
 - Short-lived JWT (30 minutes) carrying user_id only.
 - Roles are NEVER trusted from JWT payload alone; active user status and role are read directly from the database on every authenticated request.
 - `require_role` dependency on protected routes; non-admin accessing forbidden document routes receives 404 (or 403 where appropriate) so restricted assets are not disclosed.
+

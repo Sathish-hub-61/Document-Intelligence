@@ -39,3 +39,4 @@ University rules sit in many PDFs and DOCX files. Students and staff lose time f
 - **F13 (P2)**: OCR for scanned PDFs.
 - **F14 (P2)**: Feedback (helpful or not) on each answer.
 - **F15 (P1)**: Evaluation runner that scores a gold question set.
+

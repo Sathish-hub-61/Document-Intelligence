@@ -10,3 +10,4 @@ Implement dense vector embeddings using Sentence Transformers (`BAAI/bge-small-e
 - Keyword index: queries chunks using full-text search matching section headings and text, filtered by allowed version IDs.
 - Ingestion step: batches embeddings and upserts to ChromaDB upon document chunking.
 - Reindex endpoint: `POST /api/versions/{id}/reindex`.
+

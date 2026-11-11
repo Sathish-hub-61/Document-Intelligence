@@ -25,3 +25,4 @@ eval:
 clean:
 	find . -type d -name "__pycache__" -exec rm -rf {} +
 	rm -rf .pytest_cache .mypy_cache .ruff_cache
+

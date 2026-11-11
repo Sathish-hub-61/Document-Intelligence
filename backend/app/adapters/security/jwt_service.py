@@ -46,3 +46,4 @@ def decode_access_token(token: str) -> UUID:
         raise AuthenticationError("Token has expired")
     except (jwt.PyJWTError, ValueError):
         raise AuthenticationError("Invalid authentication token")
+

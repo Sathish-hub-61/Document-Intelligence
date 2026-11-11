@@ -10,3 +10,4 @@ Establish the foundational infrastructure, directory layout, Docker Compose conf
 - Composition layer wires settings and dependencies.
 - Docker Compose configures PostgreSQL 16 on port 5432.
 - Testing infrastructure setup with pytest.
+

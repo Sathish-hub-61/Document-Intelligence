@@ -5,7 +5,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.adapters.api.error_handlers import register_error_handlers
-from app.adapters.api.routers import auth, documents, health
+from app.adapters.api.routers import auth, chat, documents, health
 from app.adapters.persistence.database import Base, engine
 from app.composition.settings import get_settings
 
@@ -36,6 +36,7 @@ register_error_handlers(app)
 app.include_router(health.router)
 app.include_router(auth.router)
 app.include_router(documents.router)
+app.include_router(chat.router)
 
 
 @app.get("/")

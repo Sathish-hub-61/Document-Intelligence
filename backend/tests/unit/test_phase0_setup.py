@@ -170,3 +170,4 @@ def test_api_health_endpoint():
     data = response.json()
     assert data["status"] in ("ok", "degraded")
     assert data["database"] == "ok"
+
